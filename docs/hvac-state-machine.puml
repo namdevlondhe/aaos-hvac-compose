@@ -1,0 +1,15 @@
+@startuml
+' Generated from HvacStateMachine.MODE_TRANSITIONS. Do not edit by hand.
+title HVAC mode state machine
+[*] --> OFF
+OFF --> MANUAL : POWER
+MANUAL --> OFF : POWER
+AUTO --> OFF : POWER
+DEFROST --> OFF : POWER
+MANUAL --> AUTO : AUTO
+AUTO --> MANUAL : AUTO
+AUTO --> MANUAL : FAN (manual override)
+MANUAL --> DEFROST : DEFROST
+AUTO --> DEFROST : DEFROST
+DEFROST --> MANUAL : DEFROST (restore fan and A/C)
+@enduml

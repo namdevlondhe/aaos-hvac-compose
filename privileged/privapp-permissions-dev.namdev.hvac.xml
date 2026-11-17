@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Allow-list for the privileged permission when the APK is installed in /system/priv-app. -->
+<permissions>
+    <privapp-permissions package="dev.namdev.hvac">
+        <permission name="android.car.permission.CONTROL_CAR_CLIMATE" />
+    </privapp-permissions>
+</permissions>
